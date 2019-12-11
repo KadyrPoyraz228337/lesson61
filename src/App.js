@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import CountryList from "./components/countryList/countryList";
 
 class App extends Component {
     state = {
@@ -14,8 +15,10 @@ class App extends Component {
     };
     render() {
         return (
-            <div>
-              
+            <div style={{maxHeight: 'calc(100vh - 1px)'}} className='border'>
+              <CountryList
+                counties={this.state.countries}
+              />
             </div>
         );
     }
