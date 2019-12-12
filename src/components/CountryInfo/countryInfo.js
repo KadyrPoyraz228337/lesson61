@@ -6,10 +6,6 @@ class CountryInfo extends PureComponent {
       countryInfo: {},
     };
 
-    // shouldComponentUpdate(nextProps) {
-    //     return nextProps.alpha3Code !== this.props.alpha3Code && this.props.alpha3Code !== undefined
-    // }
-
     async componentDidUpdate(prevProps) {
         if(this.props.alpha3Code !== prevProps.alpha3Code){
             const resp = await axios({

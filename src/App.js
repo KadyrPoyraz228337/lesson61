@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import CountryList from "./components/countryList/countryList";
 import CountryInfo from "./components/CountryInfo/countryInfo";
-import CatsApp from "./components/catsApp/catsApp";
 
 class App extends Component {
     state = {
@@ -34,7 +33,6 @@ class App extends Component {
                         alpha3Code={this.state.countryName}
                     />
                 </div>
-                <CatsApp/>
             </>
         );
     }
